@@ -37,7 +37,7 @@ As an example:
 python MOT_to_VOC.py --mot_path /imatge/agirbau/work/MOT/MOT17/MOT17Det --voc_path /imatge/agirbau/work/MOT/MOT17/MOT17_voc
 ```
 
-The dataset structure will be the same as the original MOTChallenge dataset, but in the `gt` folder will have an XML file per frame instead of a global `gt.txt` file.
+The dataset structure will be the same as the original MOTChallenge dataset, but the `gt` folder will contain an XML file per frame instead of a global `gt.txt` file.
 
 
 As an example for reading the VOC-like data there's a visualization script that shows the ground truth for a sequence:
