@@ -17,11 +17,16 @@ This script has been tested for python3.5 (remember that 2.7 is not longer suppo
 3. Finally download the MOTChallenge data:
     Download [MOT17Det](https://motchallenge.net/data/MOT17Det.zip) and unzip
     ```
-    unzip -d your/path/to/the/MOT/dataset MOT17Det.zip
+    wget https://motchallenge.net/data/MOT17Det.zip -P your/path/to/the/MOT/dataset
+    ```
+    ```
+    cd your/path/to/the/MOT/dataset
+    unzip MOT17Det.zip
+    cd -
     ```
 
 ## Usage
-Simply pass as an argument the MOTDet path and the path where the VOC-like dataset will be generated.
+Simply pass as an argument the MOTDet path and the path where the VOC-like dataset will be generated. 
 ```
 python MOT_to_VOC.py --mot_path your/path/to/the/MOT/dataset --voc_path your/path/to/the/VOC/dataset
 ```
@@ -31,6 +36,9 @@ As an example:
 ```
 python MOT_to_VOC.py --mot_path /imatge/agirbau/work/MOT/MOT17/MOT17Det --voc_path /imatge/agirbau/work/MOT/MOT17/MOT17_voc
 ```
+
+The dataset structure will be the same as the original MOTChallenge dataset, but in the `gt` folder will have an XML file per frame instead of a global `gt.txt` file.
+
 
 As an example for reading the VOC-like data there's a visualization script that shows the ground truth for a sequence:
 ```
