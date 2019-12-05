@@ -42,7 +42,7 @@ The dataset structure will be the same as the original MOTChallenge dataset, but
 
 As an example for reading the VOC-like data there's a visualization script that shows the ground truth for a sequence:
 ```
-python MOT_VOC_visualization.py --voc_path --voc_path your/path/to/the/VOC/dataset/train/MOT-sequence
+python MOT_VOC_visualization.py --voc_path your/path/to/the/VOC/dataset/train/MOT-sequence
 ```
 
 As an example:
